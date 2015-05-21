@@ -34,6 +34,8 @@ func convert(value reflect.Value) interface{} {
 		return value.Float()
 	case reflect.Int:
 		return value.Int()
+	case reflect.Bool:
+		return value.Bool()
 	}
 	return value.Interface()
 }
